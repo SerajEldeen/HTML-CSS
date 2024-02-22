@@ -1,0 +1,33 @@
+body{
+margin-right: 150px;
+margin-left: 150px;
+background-color: rgb(232, 233, 233);
+}
+.header{
+  font-size: 150px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-image:url(images/h1flag.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-clip:text ;
+  cursor: pointer;
+}
+.div{
+  display: flex;
+  justify-content: center;
+}
+.pargraph{
+  font-family: Rubik;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  align-items: center;
+  color: rgb(135, 134, 134);
+}
+.flag-img{
+ width: 700px;
+ height: 300px;
+}
