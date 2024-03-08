@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaslesVPN/seraj</title>
   <link rel="stylesheet" href="lasles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,7 +9,7 @@
 </head>
 <body>
               <!-- Navibar -->
-  <nav>
+  <nav >
    <div class="nav-div">
       <div>
         <img src="images/logo.svg">
@@ -27,7 +28,7 @@
     </div>
   </nav>
           <!-- Header -->
-  <header>
+  <header >
     <div class="header-div">
     <div>
        <h1 class="top-header"> 
@@ -48,35 +49,33 @@
     </div>
   </header>
                 <!-- banner-Section-->
-      <section class="section-banner">
+      <section >
         <div class="banner">
           <div class="banner-div">
             <img class="banner-photo" src="images/user.svg">
-            <p class="pargraph-banner">
-             <span class="span1"> 90+</span><br>
-             <span class="banner-word">Users</span>
-            </p>
-            <img class="space-banner" src="images/space-panner.png">
+            <div class="right-border-banner">
+              <h3 class="banner-number">90+ </h3>
+              <p class ="banner-word">Users</p>
+            </div>
           </div>
-      <div>
+      <div class="banner-div">
         <img class="banner-photo" src="images/location.svg">
-        <p class="pargraph-banner">
-         <span class="span1"> 30+</span><br>
-         <span class="banner-word">Locations</span>
-        </p>
-        <img class="space-banner" src="images/space-panner.png">
+        <div class="right-border-banner">
+          <h3 class="banner-number">30+ </h3>
+          <p class ="banner-word">Locations</p>
+        </div>
       </div>
-      <div>
+      <div class="banner-div">
         <img class="banner-photo" src="images/Server.svg">
-        <p class="pargraph-banner">
-         <span class="span1"> 50+</span><br>
-         <span class="banner-word">servers</span>
-        </p>
+        <div class="right-border-banner">
+          <h3 class="banner-number">50+ </h3>
+          <p class ="banner-word">Servers</p>
+        </div>
       </div>
         </div>
       </section>
           <!-- features-section -->
-      <section>
+      <section >
    <div class="features-section">
   <img class="features-photo" src="images/Featurers-img.png">
   <div class="right-side-features-section">
@@ -111,60 +110,59 @@
   </div>
    </div>
       </section>
-             <!-- plan sections -->
-     <section class="plan-section">
-     <h2 class="plan-head">Choose Your Plan</h2>
-     <p  class="plan-parg">
-      Let's choose the package that is best for you and
-       explore it happily and cheerfully.
-     </p>
-     <div>
-     <div class="card-container">
-     <div class="card">
-      <img  src="images/free-plan.png">
-       <p class="card-word">Free Plan</p>
-        <ul>
-          <li><span class="check-mark-parg"> Unlimited Bandwidth</span></li>
-          <li><span  class="check-mark-parg"> Encrypted Connection</span></li>
-          <li><span  class="check-mark-parg">No Traffic Logs</span> </li>
-          <li><span  class="check-mark-parg">Works on All Devices</span> </li>
-        </ul>
-      <h2 class="plan-price1">Free</h2>
-       <button class="plan-button">Select</button>
-     </div>
-     <div class="card">
-      <img  src="images/Standard-plan.png">
-       <p class="card-word">Standard Plan</p>
-        <ul>
-          <li> <span class="check-mark-parg"> Unlimited Bandwidth</span></li>
-          <li><span  class="check-mark-parg"> Encrypted Connection</span></li>
-          <li><span  class="check-mark-parg">No Traffic Logs</span> </li>
-          <li><span  class="check-mark-parg">Works on All Devices</span> </li>
-          <li><span  class="check-mark-parg">Connect Anyware</span> </li>
-
-        </ul>
-      <h2 class="plan-price2">$9<span class="month-plan">/mo</span></h2>
-       <button class="plan-button">Select</button>
-     </div>
-     <div class="card">
-      <img  src="images/Premium-plan.png">
-       <p class="card-word">Premium Plan</p>
-        <ul>
-          <li> <span class="check-mark-parg"> Unlimited Bandwidth</span></li>
-          <li><span  class="check-mark-parg"> Encrypted Connection</span></li>
-          <li><span  class="check-mark-parg">No Traffic Logs</span> </li>
-          <li><span  class="check-mark-parg">Works on All Devices</span> </li>
-          <li><span  class="check-mark-parg">Connect Anyware</span> </li>
-          <li><span  class="check-mark-parg">Get New Features</span> </li>
-        </ul>
-      <h2 class="plan-price3">$12<span class="month-plan">/mo</span></h2>
-       <button class="plan-button">Select</button>
-     </div>
-     </div>
-     </div>
-     </section>
+   <!-- plan sections -->
+   <section class="plan-section">
+    <h2 class="plan-head">Choose Your Plan</h2>
+    <p class="plan-parg">
+      Let's choose the package that is best for you and explore it happily and cheerfully.
+    </p>
+    <div class="templeate-cards">
+      <div class="card-container">
+        <div class="card">
+            <img class="images" src="images/free-plan.png">
+          
+          <p class="card-word">Free Plan</p>
+          <ul>
+            <li><span class="check-mark-parg">Unlimited Bandwidth</span></li>
+            <li><span class="check-mark-parg">Encrypted Connection</span></li>
+            <li><span class="check-mark-parg">No Traffic Logs</span></li>
+            <li><span class="check-mark-parg">Works on All Devices</span></li>
+          </ul>
+          <h2 class="plan-price1">Free</h2>
+          <button class="plan-button">Select</button>
+        </div>
+        <div class="card">
+            <img class="images" src="images/Standard-plan.png">
+          <p class="card-word">Standard Plan</p>
+          <ul>
+            <li><span class="check-mark-parg">Unlimited Bandwidth</span></li>
+            <li><span class="check-mark-parg">Encrypted Connection</span></li>
+            <li><span class="check-mark-parg">No Traffic Logs</span></li>
+            <li><span class="check-mark-parg">Works on All Devices</span></li>
+            <li><span class="check-mark-parg">Connect Anywhere</span></li>
+          </ul>
+          <h2 class="plan-price2">$9<span class="month-plan">/mo</span></h2>
+          <button class="plan-button">Select</button>
+        </div>
+        <div class="card">
+            <img  class="images"src="images/Premium-plan.png">
+          <p class="card-word">Premium Plan</p>
+          <ul>
+            <li><span class="check-mark-parg">Unlimited Bandwidth</span></li>
+            <li><span class="check-mark-parg">Encrypted Connection</span></li>
+            <li><span class="check-mark-parg">No Traffic Logs</span></li>
+            <li><span class="check-mark-parg">Works on All Devices</span></li>
+            <li><span class="check-mark-parg">Connect Anywhere</span></li>
+            <li><span class="check-mark-parg">Get New Features</span></li>
+          </ul>
+          <h2 class="plan-price3">$12<span class="month-plan">/mo</span></h2>
+          <button class="plan-button">Select</button>
+        </div>
+      </div>
+    </div>
+  </section>
           <!-- map-section  -->
-     <section class="map-section">
+     <section  >
       <h2 class="map-head">
         Huge Global Network<br> of Fast VPN
       </h2>
@@ -172,7 +170,7 @@
         See<span class="span1"> LaslesVPN</span> everywhere to make it easier
          for you when you move<br> locations.
       </p>
-      <img src="images/Huge Global.png">
+      <img class="Map" src="images/Huge Global.png">
       <img src="images/Sponsored.png">
       <div>
         <h2 class="sponserd-head">Trusted by Thousands of<br> Happy Customers</h2>
@@ -247,22 +245,27 @@
           </div>
           </div>
          </section>
-         <img class="right" src="images/right.png">
-          <img class="left" src="images/left.png">
-          <img class="group" src="images/Group 1300.png">
+            <!-- Buttons-Section -->
+         <section class="buttons-section">
+          <div>
+            <img class="right" src="images/right.png">
+            <img class="left" src="images/left.png">
+            <img class="group" src="images/Group 1300.png">
+           </div>
+         </section>
+         
                    <!-- End-section -->
-          <section>
+          <section class="End-section">
             <div class="end-container">
-            <div >
+            <div class="left-side" >
               <p class="end-parg1">
                 Subscribe Now to Get Special Features!
               </p>
               <p class="end-parg2">
                 Let's subscribe with us and find the fun.
               </p>
-
             </div>
-            <div >
+            <div class="right-side" >
                 <button class="end-button">
                   Subscribe Now
                 </button>
@@ -270,7 +273,7 @@
             </div>
           </section>
             <!-- Footer-section -->
-          <footer>
+          <footer class="Footer-section">
             <div class="footer-container">
               <div class="Fcol1">
                 <img src="images/logo.svg">
@@ -313,7 +316,5 @@
 
             </div>
           </footer>
-      
-
 </body>
 </html>
