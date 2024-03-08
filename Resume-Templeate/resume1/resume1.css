@@ -1,0 +1,88 @@
+body{
+  background-color: rgb(224, 223, 223);
+}
+.h1{
+  color: grey;
+  text-align: center;
+}
+.header-div{
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  font-weight: bold;
+  color:red;
+}
+.hr{
+  border-style: dotted;
+  border-color: rgb(105, 105, 99);
+}
+@media(max-width:768px){
+  .header-div{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+h2{
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(141, 147, 147);
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(171, 5, 5);
+  line-height: 26px;
+  margin-left: 350px;
+  margin-right: 70px;
+  
+}
+.right-side{
+  width: 250px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  margin-left: 70px;
+  vertical-align: top;
+  
+}
+.Exeperince{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(171, 5, 5);
+  line-height: 26px;
+  justify-content:top;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(171, 5, 5);
+  line-height: 26px;
+  justify-content: space-between;
+}
+@media(max-width:768px){
+  .projects,
+  .right-side,
+  .Exeperince,
+  .skills{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-left: 0;
+
+  }
+
+}
