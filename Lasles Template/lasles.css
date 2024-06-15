@@ -324,7 +324,22 @@ nav .container img{
   position: absolute;
   left: 25%;
 }
-@media(max-width:666px){
+  @media(max-width:768px){
+    .subscribe .container .template {
+    justify-items: center;
+    }
+    .subscribe .container .template .box img{
+      margin-left: 20px;
+    }
+    .subscribe .container .template .box ul{
+      padding-left: 0;
+    }
+    .subscribe .container .template .box a{
+      left: 5px;
+    }
+  }
+
+/* @media(max-width:666px){
   .subscribe .container .template .box{
     left: 25%;
   }
@@ -333,7 +348,7 @@ nav .container img{
   .subscribe .container .template .box{
     left: 10%;
   }
-}
+} */
                                    /* Map */
 .map{
   padding-top: var(--section-padding);
