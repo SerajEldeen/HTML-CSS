@@ -132,6 +132,8 @@ nav .container .left button{
 }
 nav .container img{
   max-width: 100%;
+  object-fit: contain;
+
 }
 @media(max-width:1200px){
   nav .container{
