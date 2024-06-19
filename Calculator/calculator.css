@@ -1,6 +1,7 @@
 body{
   background-color: whitesmoke;
 }
+
 .container .calc{
   background-color: rgb(59, 59, 61);
   width: 280px;
@@ -134,7 +135,10 @@ button{
   .container .calc{
     left:30%;
     top: 100px;
-   
+  }
+  .container{
+    display: grid;
+    justify-content: center;
   }
 }
 @media(max-width:480px){
@@ -142,5 +146,9 @@ button{
     left: 0;
     top: 100px;
     max-width: 100%;
+  }
+    .container{
+    display: grid;
+    justify-content: center;
   }
 }
