@@ -1,0 +1,167 @@
+body{
+  background-color: whitesmoke;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container .calc{
+  background-color: rgb(59, 59, 61);
+  width: 280px;
+  height: 460px;
+  position: relative;
+  left:50%;
+  top: 100px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto 50px 50px 50px 50px 50px;
+  grid-template-areas: 
+  "screen screen screen screen"
+  "clear plus-minus percent divide"
+  "seven eight nine multiply"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equal";
+  gap:5px;
+  padding: 10px 5px;
+}
+.screen {
+  grid-area: screen;
+ }
+.clear {
+  grid-area: clear;
+  background-color:rgb(90, 90, 92);
+  border-color:rgb(90, 90, 92);
+ }
+.plus-minus {
+  grid-area: plus-minus;
+  background-color:rgb(90, 90, 92);
+  border-color:rgb(90, 90, 92);
+ }
+.percent {
+  grid-area: percent; 
+  background-color:rgb(90, 90, 92);
+  border-color:rgb(90, 90, 92);
+}
+.divide {
+  grid-area: divide;
+  background-color: orange;
+  border-color: orange;
+ }
+.seven {
+  grid-area: seven;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.eight {
+  grid-area: eight;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.nine {
+  grid-area: nine;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.multiply {
+  grid-area: multiply;
+  background-color: orange;
+  border-color: orange;
+ }
+.four {
+  grid-area: four; 
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+}
+.five {
+  grid-area: five;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.six {
+  grid-area: six;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.minus {
+  grid-area: minus; 
+  background-color: orange;
+  border-color: orange;
+}
+.one {
+  grid-area: one; 
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+}
+.two {
+  grid-area: two;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+}
+.three {
+  grid-area: three; 
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+}
+.plus {
+  grid-area: plus; 
+  background-color: orange;
+  border-color: orange;
+}
+.zero {
+  grid-area: zero;
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+ }
+.dot {
+  grid-area: dot; 
+  background-color:rgb(59, 59, 61);
+  border-color:rgb(59, 59, 61);
+}
+.equal {
+  grid-area: equal; 
+  background-color: orange;
+  border-color: orange;
+}
+button{
+  border-radius: 30px;
+  border: 1px solid;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  color: white;
+}
+@media(max-width:480px){
+  .container .calc{
+    left: 0;
+    top: 0;
+    max-width: 100%;
+  }
+}
+@media(max-width:768px){
+  .container .calc{
+    left:20%;
+    top: 100px;
+    max-width: 100%;
+  }
+}
+@media(max-width:1024px){
+  .container .calc{
+    left: 30%;
+    top: 200px;
+  }
+}
