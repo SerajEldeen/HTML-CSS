@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/icon.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav-left">
+        <a href="#" class="logo"
+          ><img src="./assets/icon.svg" alt="Icon" width="18px" height="18px" />
+          Finder</a
+        >
+      </div>
+      <div class="menu-wrapper">
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="#">Home</a> <i class="fa-solid fa-caret-down"></i>
+              <ul>
+                <li>Real Estate <span>Property listings directory</span></li>
+                <li>Cars <span>Vehicle sales listings</span></li>
+                <li>
+                  Contractors <span>Professional services directory</span>
+                </li>
+                <li>Doctors <span>Medical professionals listings</span></li>
+                <li>Events <span>Upcoming events listings</span></li>
+                <li>City Guide <span>Local places directory</span></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Listings</a>
+              <i class="fa-solid fa-caret-down"> </i>
+              <div class="listings">
+                <div>
+                  <h4>Real Estate</h4>
+                  <ul>
+                    <li><a href="#">Map/Listings Split View </a></li>
+                    <li><a href="#">Property Details Page </a></li>
+                    <li><a href="#">Vendor Page </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Cars</h4>
+                  <ul>
+                    <li><a href="#">Listings Grid View </a></li>
+                    <li><a href="#">Listings List View </a></li>
+                    <li><a href="#">Car Details Page </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Contractors</h4>
+                  <ul>
+                    <li><a href="#">Listings with Side Filters </a></li>
+                    <li><a href="#">Contractor Details Page </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Doctors</h4>
+                  <ul>
+                    <li><a href="#">Listings with Top Filters </a></li>
+                    <li><a href="#">Event Details Page </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>City Guide</h4>
+                  <ul>
+                    <li><a href="#">Listings with Side Filters </a></li>
+                    <li><a href="#">Listings with Top Filters </a></li>
+                    <li><a href="#">Place Details Page </a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Add Property</h4>
+                  <ul>
+                    <li><a href="#">Property type </a></li>
+                    <li><a href="#">Location </a></li>
+                    <li><a href="#">Photos and Videos </a></li>
+                    <li><a href="#">Property Details </a></li>
+                    <li><a href="#">Price </a></li>
+                    <li><a href="#">Contact Info </a></li>
+                    <li><a href="#">Ad Promotion </a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Account</a> <i class="fa-solid fa-caret-down"></i>
+              <ul>
+                <li class="authNestedList">
+                  Auth Pages
+                  <i class="fa-solid fa-caret-right"></i>
+                  <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Password Recovery</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">My Listings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages</a> <i class="fa-solid fa-caret-down"></i>
+              <ul>
+                <li class="aboutNestedList">
+                  About
+                  <i class="fa-solid fa-caret-right"></i>
+                  <ul>
+                    <li><a href="#">About v.1</a></li>
+                    <li><a href="#">About v.2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Terms&Conditions</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Components</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="login">
+        <i class="fa-regular fa-sun"></i>
+        <i class="fa-solid fa-user"></i>
+        <button type="button">Join</button>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <h1>Explore top-rated certified pros nearby</h1>
+        <form action="#">
+          <div>
+            <div class="service">
+              <label for="service" class="service"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></label>
+              <input
+                type="text"
+                id="service"
+                name="serach-servive"
+                placeholder="What service do you need?"
+              />
+            </div>
+            <div class="zipCode">
+              <label for="zipCode" class="zipCode"
+                ><i class="fa-solid fa-location-dot"></i
+              ></label>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                placeholder="ZipCode"
+              />
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <div class="servicesButtons">
+          <button type="button">HandyPerson</button>
+          <button type="button">Electrician</button>
+          <button type="button">Plumbing</button>
+          <button type="button">LandScaping</button>
+          <button type="button">Roofing</button>
+        </div>
+      </section>
+
+      <!--Categories  -->
+      <section id="categories">
+        <div class="topSection">
+          <h2>Browse pros in your area</h2>
+          <a href="#">View all <i class="fa-solid fa-caret-right"></i></a>
+        </div>
+        <div class="bottomSection">
+          <div>
+            <i class="fa-solid fa-rug"></i>
+            <a href="#">Flooring</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <a href="#">Concrete</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bath"></i>
+            <a href="#">Cleaning</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-accessible-icon"></i>
+            <a href="#">HandyPerson</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <a href="#">Painting</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-wrench"></i>
+            <a href="#">Plumbing</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-spaghetti-monster-flying"></i>
+            <a href="#">Pest control</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-temperature-arrow-up"></i>
+            <a href="#">Heating & furnance</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bolt"></i>
+            <a href="#">Electrician</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-people-roof"></i>
+            <a href="#">Roofing</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-hammer"></i>
+            <a href="#">Carpentry</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-panorama"></i>
+            <a href="#">Landscaping</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="topSection">
+        <div class="leftSide">
+          <i class="fa-solid fa-envelope"></i>
+          <h5>Subscribe to our newsletter</h5>
+          <button type="button">Subscribe</button>
+        </div>
+        <div class="rightSide">
+          <span>Need help?</span>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+      <hr />
+      <div class="bottomSection">
+        <div class="leftSide">
+          <p>&copy; All rights reserved. Made by</p>
+          <span
+            ><a href="https://serajeldeen13.netlify.app/">Seraj Eldeen</a></span
+          >
+        </div>
+        <div class="rightSide">
+          <img src="./assets/visa-dark-mode.svg" alt="Visa" />
+          <img src="./assets/mastercard.svg" alt="MasterCard" />
+          <img src="./assets/paypal-dark-mode.svg" alt="Paypal" />
+          <img src="./assets//google-pay-dark-mode.svg" alt="GooglePay" />
+          <img src="./assets/apple-pay-dark-mode.svg" alt="ApplePay" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
